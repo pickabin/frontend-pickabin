@@ -24,16 +24,18 @@ const Header = () => {
 								<Link to={`#`}>Home</Link>
 							</Li>
 							<Li>
-								<Link to={`#`}>Features</Link>
+								<Link to={'#'}>Features</Link>
 							</Li>
 							<Li>
-								<Link to={`#`}>Testimoni</Link>
+								<Link to={'#'}>Testimoni</Link>
 							</Li>
 							<Li>
-								<Link to={`#`}>Contact</Link>
+								<Link to={'/register'}>Contact</Link>
 							</Li>
 						</Ul>
-						<Button>Get The App Now</Button>
+						<Button>
+							<Link to='/login'>Login</Link>
+						</Button>
 						<img
 							src={open ? close : hamburger}
 							className='hamburger'
