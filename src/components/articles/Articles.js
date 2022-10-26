@@ -11,7 +11,7 @@ import PakGrez from '../../images/pakgrez.jpg';
 import MasIrul from '../../images/masirul.jpg';
 import BuSiti from '../../images/busiti.jpg';
 
-import { H2, H4, H5, Para } from '../../styles/Typography.style';
+import { H2, H4, Para } from '../../styles/Typography.style';
 const Articles = () => {
 	return (
 		<div>

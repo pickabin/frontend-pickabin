@@ -1,22 +1,22 @@
 import React from 'react';
-import GlobalStyle from './styles/GlobalStyle';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
 import Register from './pages/Register';
+import LandingPage from './landingpage/landingpage';
+import GlobalStyle from './styles/GlobalStyle';
+import Login from './pages/Login';
+import DashboardApp from './pages/DashboardApp';
 
 const App = () => {
 	return (
 		<div>
 			<GlobalStyle />
-			<Router>
-				<Header />
+			<Router>			
 				<Routes>
-					<Route exact path='/' element={<Home />} />
+					<Route exact path='/' element={<LandingPage />} />
+					<Route exact path='/login' element={<Login />} />
 					<Route exact path='/register' element={<Register/>} />
- 				</Routes>
-				<Footer />
+					<Route exact path='/dashboard' element={<DashboardApp />} />
+ 				</Routes>			
 			</Router>
 		</div>
 	);
